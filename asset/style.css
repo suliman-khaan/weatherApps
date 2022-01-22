@@ -7,6 +7,7 @@
     --white: #F7F7F7;
     --gray: #B2B1B9;
     --dark-red:#A45D5D;
+    --red : #DA1212;
     --blue:#292C6D;
     --dark-blue:#161853;
     --light-black:rgba(0,0,0,.6);
@@ -44,7 +45,8 @@
     height: 100%;
     text-align: center;
     font-size: 1.5rem;
-    color: var(--dark-red);
+    color: var(--red);
+    font-family: 'poppins','sans-serif';
 }
 .card .card-content{
     height: 100%;
@@ -75,10 +77,10 @@
     padding: 0 8px;
     border-left: none;
     border-radius: 0 5px 5px 0;
-    background-color: var(--dark-red);
+    background-color: var(--gray);
 }
-.card .card-content form :is(button):hover{
-    background-color:transparent;
+.card form :is(button):hover{
+    background-color:transparent!important;
 }
 .card .card-content .card-body{
     display: grid;
