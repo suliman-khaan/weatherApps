@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="asset/style.css">
+    <title>Weather</title>
+</head>
+<body>
+    <section class="main">
+        <div class="card">
+            <span class="loading"><img src="asset/icon/spinner.gif" alt=""></span>
+            <form class="form">
+                <input type="text" class="input" placeholder="City"><button >Search</button>
+            </form>
+            <div class="error">
+                <span></span>
+            </div>
+            <div class="card-content">
+                <div class="card-body">
+                    <div class="body-content">
+                        <div class="title">
+                            <h1 id="temp">0&deg;</h1>
+                            <p id="weather_status">Chilly</p>
+                        </div>
+                        <div class="icon">
+                            <img id="icon" src="asset/icon/cloudy.png">
+                            <img src="asset/mountain.png" alt="mountain">
+                            <span id="name">Name</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <div class="footer today">
+                        <p id="tomorrow">Tomorrow</p>
+                        <div>
+                            <span id="temp_now">17&deg;</span>
+                            <span id="ws_now">Cloudy</span>
+                        </div>
+                    </div>
+                    <div class="footer tomarrow">
+                        <p id="nextTomorrow">Next Day</p>
+                        <div>
+                            <span id="temp_next">17&deg;</span>
+                            <span id="ws_next">Cloudy</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="asset/js/api.js"></script>
+</body>
+</html>
